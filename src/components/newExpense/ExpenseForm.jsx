@@ -22,7 +22,7 @@ const ExpenseForm = (props) => {
     let userInput = {
       title,
       amount,
-      date,
+      date: new Date(date),
     };
     props.onSaveExpenseData(userInput);
     setAmount("");
