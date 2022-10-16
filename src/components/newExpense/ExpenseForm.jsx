@@ -69,7 +69,12 @@ const ExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
-        <button type="submit">Add Expense</button>
+        <button type="button" onClick={props.toogleHandler}>
+          Cancel
+        </button>
+        <button type="submit" onClick={props.toogleFormHandler}>
+          Add Expense
+        </button>
       </div>
     </form>
   );
